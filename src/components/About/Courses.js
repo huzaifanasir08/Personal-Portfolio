@@ -21,9 +21,12 @@ const Courses = () => {
                     <h2>{course.institution}</h2>
                     </div>
                     <div className='course-card-list'>
+                        <ul className= 'course-list'style={{textAlign: 'start'}}>
                         {course.course.map((c, i) => (
                             <li>{c}</li>
                         ))}
+                        </ul>
+                        
                     </div>
                     
                 </div>

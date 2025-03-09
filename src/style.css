@@ -207,8 +207,8 @@ button:focus {
   position: fixed !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
 }
 
 .home-header {
@@ -233,12 +233,12 @@ button:focus {
 }
 
 .heading {
-  font-size: 2.4em !important;
+  font-size: clamp(25px, 3vw, 40px) !important;
   padding-left: 45px !important;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: clamp(25px, 3vw, 40px) !important;
   padding-left: 45px !important;
 }
 
@@ -247,42 +247,117 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
+  font-size: clamp(25px, 3vw, 40px) !important;
   color: #42e5ff !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
+  font-size: clamp(25px, 3vw, 40px) !important;
   color: #42e5ff !important;
 }
 
 @media (max-width: 767px) {
-  .Typewriter__wrapper {
+  /* .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
     position: absolute !important;
-  }
-  .Typewriter__cursor {
+  } */
+  /* .Typewriter__cursor {
     display: none !important;
-  }
+  } */
 }
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 7em !important;
 }
 
+.pic_small{
+  display: none;
+}
 @media (max-width: 767px) {
   .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
+    padding-top: 0em !important;
+    padding-bottom: 1em !important;
 }
 
+.pic_av{
+  height: 35vw;
+}
+.social-icons {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+.home-about-social {
+  padding-top: 0px !important;
+}
+
+.home-about{
+  flex-direction: column-reverse !important;
+}
+
+.myAvtar .img-fluid {
+  margin-top: 30px;
+  max-width: 30% !important;
+  height: auto !important;
+}
+.profile-picture{
+    max-width: 90% !important;
+    height: auto !important;
+}
+}
+@media (max-width: 400px) {
+.home-content .row {
+  position: relative !important;
+  flex-direction: row !important;
+  height: 10vh !important;
+}
+.profile-picture-small {
+  max-width: 90% !important;
+  height: auto !important;
+  border-radius: 0% !important;
+  display: block !important;
+
+}
+.home-content .pic {
+  width: 40% !important;
+  position: absolute; 
+  right: 10px;
+}
+.home-content .description {
+  width: 100% !important;
+  position: absolute;
+}
+.profile-picture{
+  display: none;
+}
+.myAvtar{
+  display: none !important;
+}
+
+.myAvtar-small{
+  display: block !important;
+}
+.img-fluid {
+    max-width: 60% !important;
+}
+
+}
+
+.profile-picture-small {
+  display: none;
+
+}
+.myAvtar-small{
+  display: none;
+}
+
+
+
 .home-about-section {
-  position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 15px !important;
+    position: relative;
+    padding-bottom: 25px !important;
+    padding-top: 15px !important;
 }
 
 .home-about-description {
@@ -360,6 +435,117 @@ button:focus {
   color: #006381 !important;
 }
 
+.h1{
+  font-size: clamp(25px, 5vw, 40px) !important;
+  text-align: left !important;
+}
+@media (max-width: 768px) {
+  .container, .container-sm {
+    max-width: 100% !important;
+}
+.home-about-description {
+  color: white !important;
+  padding-top: 25px !important;
+  padding-bottom: 20px !important;
+  text-align: center;
+}
+
+.home-about-body {
+  padding-top: 20px;
+  font-size: clamp(15px, 3vw, 22px) !important;
+  text-align: left;
+}
+.home-content .row{
+  flex-direction: row !important;
+  /* height: 40vh !important; */
+}
+.home-content .description{
+  width: 60% !important;
+}
+.home-content .pic{
+  width: 40% !important;
+}
+
+}
+@media (max-width: 400px) {
+  .navbar {
+    padding: 0.2rem !important;
+    font-size: 1.4rem !important;
+    background-color: #181a27 !important;
+}
+.navbar-brand {
+  padding-bottom: 0px !important;
+}
+  .home-about-description {
+    padding-top: 0px !important;
+    padding-bottom: 10px !important;
+  }
+  .pic_av{
+    height: 34vw !important;
+  }
+  .home-about-social {
+    padding: 0px;;
+  }
+  .home-about-social ul {
+    margin-bottom: 0px;
+  }
+  .home-about-description .h1{
+    font-size: clamp(25px, 5vw, 40px) !important;
+    text-align: left !important;
+  }
+  .home-social-icons {
+    width: 35px !important;
+    height: 35px !important;
+    line-height: 1.7em !important;
+}
+  .small-row{
+    padding: 0px 10px !important;
+  }
+  .container, .container-sm {
+    max-width: 100% !important;
+}
+.footer h3 {
+  font-size: clamp(13px, 3vw, 40px) !important;
+}
+.navbar-toggler span {
+  height: 3px !important;
+  width: 22px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+}
+.myAvtar .img-fluid {
+  margin-top: 20px;
+  max-width: 45% !important;
+  height: auto !important;
+}
+/* .home-content .pic {
+  display: none;
+} */
+.home-content .description {
+  width: 100% !important;
+}
+.heading {
+  font-size: clamp(10px, 0.9rem, 37px) !important;
+  padding-left: 10px !important;
+}
+.heading-name {
+  font-size: clamp(10px, 1rem, 37px) !important;
+  padding-left: 10px !important;
+}
+.typer {
+  padding-left: 10px !important;
+}
+.Typewriter__wrapper {
+  font-size: clamp(10px, 0.9rem, 37px) !important;
+}
+.Typewriter__cursor {
+  font-size: clamp(10px, 0.9rem, 37px) !important;
+}
+.social-icons {
+  padding-right: 7px !important;
+  padding-left: 7px !important;
+}
+}
 
 
 
@@ -423,6 +609,20 @@ button:focus {
   to {
       background-position: 0 0;
   }
+}
+
+
+@media (max-width: 767px) {
+  .skill-level {
+    grid-template-columns: 1fr;
+    margin: 30px 0px 55px 0px;
+}
+}
+
+@media (max-width: 767px) {
+  .striped .progress-bar {
+    font-size: 0.7rem !important;
+}
 }
 
 
@@ -545,6 +745,11 @@ button:focus {
   border-radius: 0px !important;
 }
 
+.img-fluid {
+  max-width: 80%;
+  height: auto !important;
+}
+
 .btn-primary {
   color: #001d26 !important;
   background-color: #42e5ff !important;
@@ -567,6 +772,34 @@ button:focus {
   padding-top: 10px !important;
 }
 
+
+@media (max-width: 767px) {
+  .project-heading {
+    padding-top: 0px !important;
+}
+}
+
+
+@media (max-width: 400px) {
+  .project-heading {
+    font-size: 1.5rem !important;
+}
+.project-section {
+  padding-top: 90px !important;
+}
+.project-card {
+  padding-top: 0px !important;
+}
+.project-card .card-body {
+  padding: 0px 20px 20px 20px !important;
+}
+.project-card p{
+  font-size: 0.8rem !important;
+}
+.project-section {
+  padding-bottom: 0px !important;
+}
+}
 /* --------- */
 /* About */
 /* --------- */
@@ -597,6 +830,22 @@ button:focus {
 @media (max-width: 767px) {
   .tech-icons {
     margin: 10px !important;
+    width: 40% !important;
+}
+  .about-section {
+    padding-top: 90px !important;
+}
+  .profile-pic{
+    max-width: 40vw !important;
+  }
+  .about-con{
+    flex-direction: column-reverse !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .tech-icons svg{
+    height: 3.3rem !important;
   }
 }
 
@@ -624,8 +873,42 @@ button:focus {
 
 @media (max-width: 767px) {
   .about-img {
-    padding-top: 0 !important;
+    padding: 0 !important;
+    margin: 0px !important;
   }
+
+}
+
+@media (max-width: 400px) {
+  .card-body {
+    padding: 0px !important;
+}
+.about-sec{
+  padding-right:.2rem !important;
+  padding-left: 0.2rem !important;
+}
+.other-activity{
+  padding: 0px !important;
+  font-size: clamp(15px, 3vw, 22px) !important;
+}
+.quoet{
+  font-size: 1.1rem !important;
+  text-align: start !important;
+}
+.education {
+  padding: 0px !important;
+}
+.about-section {
+  padding-top: 50px !important;
+}
+.my-heading{
+  padding-top: 15px !important;
+}
+
+}
+
+.my-heading{
+  padding-top: 30px;
 }
 
 /* --------- */
@@ -803,6 +1086,13 @@ button:focus {
   box-shadow: 0 4px 5px 3px #016c8c2a;
 }
 
+
+@media (max-width: 767px) {
+  .education {
+    grid-template-columns: 1fr;
+}
+}
+
 /* --------- */
 /* Course */
 /* --------- */
@@ -839,4 +1129,30 @@ button:focus {
   justify-content: center;
   align-items: start;
 
+}
+
+
+
+@media (max-width: 767px) {
+  .course {
+    grid-template-columns: 1fr;
+}
+}
+
+
+@media (max-width: 400px) {
+  .course {
+    padding: 0px !important;
+    align-items: stretch !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+.course-card {
+  padding: 20px !important;
+  flex: 1 !important;
+}
+.course-list {
+  font-size: 1rem !important;
+  padding-left: 1rem;
+}
 }

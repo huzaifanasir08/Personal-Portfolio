@@ -10,7 +10,7 @@ import {
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px", marginTop: '25px' }}>
+    <Row style={{ justifyContent: "center", paddingBottom: "20px", marginTop: '25px' }}>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
         <div style={{fontSize:'1rem'}}>Visual Studio Code</div>
@@ -28,7 +28,7 @@ function Toolstack() {
         <div style={{fontSize:'1rem'}}>Slack</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGit />
+        <SiGit/>
         <div style={{fontSize:'1rem'}}>Git</div>
       </Col>
     </Row>

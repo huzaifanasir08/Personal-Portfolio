@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/profile1.png";
+import profile from "../../Assets/profile.png";
+import progarmmer from "../../Assets/programmer.png";
+import profileSmall from "../../Assets/profile-small.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -12,7 +14,7 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row style={{ height: "68vh", display: "flex", justifyContent: "center", alignItems: "center", paddingBottom: "70px" }}>
-            <Col md={7} className="home-header">
+            <Col md={7} className="home-header description">
               <h1 style={{ paddingBottom: 5 }} className="heading">
                 Hi There!
                 <span style={{rotate:"40.5deg"}} className="wave" role="img" aria-labelledby="wave">
@@ -25,16 +27,24 @@ function Home() {
                 <strong className="main-name"> Huzaifa Nasir</strong>
               </h1>
 
-              <div style={{ paddingLeft: 45, textAlign: "left" }}>
-                <Type />
+              <div  className='typer'  style={{ paddingLeft: 45, textAlign: "left" }}>
+                <Type/>
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20, zIndex: 1 }}>
+            <Col className="pic" md={5} style={{ paddingBottom: 0, zIndex: 1 }}>
               <img
-                src={homeLogo}
+                src={profile}
                 alt="home pic"
-                className="img-fluid"
+                className="profile-picture"
+                style={{ maxHeight: "450px", height:'26vw', borderRadius: "50%" }}
+              />
+            </Col>
+            <Col className="pic" md={5} style={{ paddingBottom: 0, zIndex: 1 }}>
+              <img
+                src={progarmmer}
+                alt="home pic"
+                className="profile-picture-small"
                 style={{ maxHeight: "450px", height:'26vw', borderRadius: "50%" }}
               />
             </Col>

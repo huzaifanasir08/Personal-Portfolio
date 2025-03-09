@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/programmer.png";
+import programmer from "../../Assets/programmer.png";
+import profile from "../../Assets/profile.png";
 import Tilt from "react-parallax-tilt";
 import "../../style.css";
 import Nav from "react-bootstrap/Nav";
@@ -17,9 +18,9 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+        <Row className="home-about">
+          <Col md={8} className="home-about-description small-row">
+            <h1 style={{ textAlign: "left" }} className="home-about-title">
               Decoding my expertise<span className="purple">—</span>who am I?
             </h1>
             <p className="home-about-body">
@@ -41,7 +42,13 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img style={{height:'20vw'}} src={myImg} className="img-fluid" alt="avatar" />
+              <img src={programmer} className="img-fluid" alt="avatar" />
+            </Tilt>
+          </Col>
+          <Col md={4} className="myAvtar-small">
+            
+          <Tilt>
+              <img src={profile} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
