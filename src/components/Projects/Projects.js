@@ -1,24 +1,13 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import inventory from "../../Assets/Projects/inventory.png";
-import LearnAgenticAI from "../../Assets/Projects/LearnAgenticAI.png";
-import textutils from "../../Assets/Projects/textutils.png";
-import gemini from "../../Assets/Projects/gemini.png";
-import hellojs from "../../Assets/Projects/hellojs.png";
-import contentScraper from "../../Assets/Projects/contentScraper.png";
-import rainPridiction from "../../Assets/Projects/rainPridiction.png";
-import webchangesdetector from "../../Assets/Projects/webchangesdetector.png";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function Projects() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [projectList, setProjects] = useState([]);
-  const [contributionList, setContributions] = useState([]);
 
-  const projects = []
   useEffect(() => {
     const fetchData = async () => {
       try {
