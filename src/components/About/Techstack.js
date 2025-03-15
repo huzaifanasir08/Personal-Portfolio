@@ -32,7 +32,7 @@ const Techstack = () => {
   return (
     <div className="skill-level">
       <div className="progress-container striped right-fade-z">
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="98">
+        <div className="progress-bar"  data-progress="98">
           HTML, CSS, JS 98%
         </div>
       </div>
@@ -49,16 +49,6 @@ const Techstack = () => {
       <div className="progress-container striped right-fade-z">
         <div className="progress-bar" style={{ width: '0%' }} data-progress="95">
           Django Rest Framework 95%
-        </div>
-      </div>
-      <div className="progress-container striped right-fade-z">
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="50">
-          Node.JS, Express.JS 50%
-        </div>
-      </div>
-      <div className="progress-container striped right-fade-z">
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="65">
-          ASP.Net 55%
         </div>
       </div>
       <div className="progress-container striped right-fade-z">

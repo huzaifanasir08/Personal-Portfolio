@@ -77,7 +77,8 @@ const handleSubmit = async (e) => {
             <Particle />
             <div className="contact-section">
             <h1>
-              You Can<strong className="purple"> Contact Me</strong>
+            
+            Need Help? <strong className="purple">Ask Me</strong>
             </h1>
                 <div id="contact-box">
                     <div className="contact-container">

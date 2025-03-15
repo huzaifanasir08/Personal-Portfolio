@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
+import Praticle from "./Particle";
 
 
 function NavBar() {
@@ -25,7 +26,7 @@ function NavBar() {
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
-    >
+    > <Praticle />
       <Container>
         <Navbar.Brand as={Link} to="/" className="d-flex">
           <h2>Portfolio</h2>

@@ -166,6 +166,20 @@ button:focus {
   width: 100%;
 }
 
+@media (max-width: 400px) {
+  .nav-link {
+    font-size: 15px;
+    padding: 0.2rem 1rem !important;
+  }
+  .navbar {
+    padding: 0.2rem !important;
+    font-size: 1.4rem !important;
+    box-shadow: 0px 2px 5px 3px #00abbf14 !important;
+    background-color: #0b0a1b !important;
+}
+
+}
+
 /* --------- */
 /* Home section */
 /* --------- */
