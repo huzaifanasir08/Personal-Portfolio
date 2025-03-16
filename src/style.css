@@ -177,6 +177,9 @@ button:focus {
     box-shadow: 0px 2px 5px 3px #00abbf14 !important;
     background-color: #0b0a1b !important;
 }
+.navbar-collapse {
+  margin-top: -15px !important;
+}
 
 }
 
