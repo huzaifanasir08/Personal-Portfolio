@@ -37,6 +37,9 @@ const Contact = () => {
         });
     };
 
+    const clicked = () => {
+        console.log("clicked");
+    }
 const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -82,7 +85,7 @@ const handleSubmit = async (e) => {
             </h1>
                 <div id="contact-box">
                     <div className="contact-container">
-                        <form className="contact-form" style={{ textAlign: 'left', color: 'white' }} onSubmit={handleSubmit}>
+                        <form className="contact-form" style={{ textAlign: 'left', color: 'white' }}>
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
                                 <input value={formData.name} onChange={handleChange} type="text" id="name" name="name" required />
@@ -99,7 +102,7 @@ const handleSubmit = async (e) => {
                                 <label htmlFor="message">Message</label>
                                 <textarea value={formData.message} onChange={handleChange} id="message" name="message" rows="5" required></textarea>
                             </div>
-                            <button className="button_more" type='submit'>
+                            <button onClick={handleSubmit} className="button_more" type='submit'>
                                 <Link to={"/contact"} style={{textDecoration:"blink", color:"rgb(11 10 69)"}}>Submit</Link>                                         
                             </button>
                         </form>
