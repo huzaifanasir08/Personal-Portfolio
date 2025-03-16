@@ -74,7 +74,7 @@ const handleSubmit = async (e) => {
 
     return (
         <section id="contact-sector">
-            <Particle />
+            {/* <Particle /> */}
             <div className="contact-section">
             <h1>
             
