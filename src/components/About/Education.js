@@ -26,7 +26,7 @@ const Education = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://127.0.0.1:8000/educations");
+                const response = await axios.get("https://huzaifanasir.pythonanywhere.com/educations");
                 setData(response.data['educations']);
             } catch (error) {
                 console.error("Error fetching data:", error);

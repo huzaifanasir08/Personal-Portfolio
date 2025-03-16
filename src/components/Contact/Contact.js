@@ -43,7 +43,7 @@ const handleSubmit = async (e) => {
     const toastId = toast.loading("Sending message..."); // Show loading toast
 
     try {
-        const response = await axios.post("http://127.0.0.1:8000/contact/", formData, {
+        const response = await axios.post("https://huzaifanasir.pythonanywhere.com/contact/", formData, {
             headers: {
                 "Content-Type": "application/json",
             },
