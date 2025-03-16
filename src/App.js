@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
+import ParticleBackground from "./components/Particle";
 import "react-toastify/dist/ReactToastify.css";
 import {
   BrowserRouter as Router,
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <Router>
+      
       <ToastContainer />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />

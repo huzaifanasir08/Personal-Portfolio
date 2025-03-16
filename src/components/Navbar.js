@@ -26,7 +26,8 @@ function NavBar() {
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
-    > <Praticle />
+    > 
+    {/* <Praticle /> */}
       <Container>
         <Navbar.Brand as={Link} to="/" className="d-flex">
           <h2>Portfolio</h2>

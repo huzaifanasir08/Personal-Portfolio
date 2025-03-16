@@ -13,11 +13,13 @@ import {
   AiOutlinePhone,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Particle from "../Particle";
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
+        <Particle />
         <Row className="home-about">
           <Col md={8} className="home-about-description small-row">
             <h1 style={{ textAlign: "left" }} className="home-about-title">
