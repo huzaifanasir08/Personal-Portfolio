@@ -174,7 +174,7 @@ button:focus {
   .navbar {
     padding: 0.2rem !important;
     font-size: 1.4rem !important;
-    box-shadow: 0px 2px 5px 3px #00abbf14 !important;
+    /* box-shadow: 0px 2px 5px 3px #00abbf14 !important; */
     background-color: #0b0a1b !important;
 }
 .navbar-collapse {
@@ -488,7 +488,7 @@ button:focus {
   .navbar {
     padding: 0.2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: #181a2700 !important;
 }
 .navbar-brand {
   padding-bottom: 0px !important;
