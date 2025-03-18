@@ -10,11 +10,20 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
+
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
+    }
+  }
+  const changeBg = () => {
+    const navbar = document.querySelector(".navbar");
+    if (navbar.style.backgroundColor === "#000000c7") {
+      navbar.style.backgroundColor = "rgb(244 244 245 / 0%)";
+    } else {
+      navbar.style.backgroundColor = "#000000c7";
     }
   }
 
@@ -36,6 +45,7 @@ function NavBar() {
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
+            changeBg();
           }}
         >
           <span></span>
