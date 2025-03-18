@@ -1332,6 +1332,13 @@ button[type="submit"] {
 }
 }
 
+.disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #2b1313;
+  cursor: not-allowed !important;
+}
+
 .status-message {
   margin-top: 10px;
   padding: 8px;

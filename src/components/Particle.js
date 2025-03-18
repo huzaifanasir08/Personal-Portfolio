@@ -28,7 +28,7 @@ export default function Particle() {
             background: {
               color: "rgb(221 221 255 / 0%)", // Dark background for contrast
             },
-            fpsLimit: 140,
+            fpsLimit: 200,
             particles: {
               color: {
                 value: "#ffffff", // Single color (white)
@@ -44,7 +44,7 @@ export default function Particle() {
                 },
               },
               number: {
-                value: 50,
+                value: 100, // Number of particles
                 density: {
                   enable: true,
                   area: 800,
@@ -63,7 +63,7 @@ export default function Particle() {
                 type: "circle",
               },
               size: {
-                value: { min: 0.4, max: 2 },
+                value: { min: 0, max: 2 },
                 animation: {
                   enable: true,
                   speed: 2,
