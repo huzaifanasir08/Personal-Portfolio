@@ -1119,6 +1119,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  align-items: stretch;
 
 }
 .course-card{
@@ -1129,7 +1130,7 @@ button:focus {
   box-shadow: inset 0 0 10px #006381;
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: auto;
   /* align-items: start; */
   box-shadow: 0 4px 5px 3px #016c8c2a;
 
