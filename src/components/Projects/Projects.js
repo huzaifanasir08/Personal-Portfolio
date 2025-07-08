@@ -28,7 +28,7 @@ function Projects() {
 
     <Container fluid className="project-section">
       <Particle />
-      <Container>
+      <Container style={{ paddingLeft: "5px", paddingRight: "20px" }}>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
@@ -71,7 +71,7 @@ function Projects() {
           }
         </Row>
       </Container>
-      <Container>
+      <Container style={{ paddingLeft: "5px", paddingRight: "20px" }}>
         <h1 className="project-heading">
         My Recent <strong className="purple">Contributions </strong>
         </h1>
@@ -119,35 +119,3 @@ function Projects() {
 }
 
 export default Projects;
-
-
-// import React, { useEffect, useState } from "react";
-// import axios from "axios";
-
-// const Projects = () => {
-//     const [images, setImages] = useState([]);
-
-//     useEffect(() => {
-//         axios.get("http://127.0.0.1:8000/projects/")
-//             .then(response => {
-//                 setImages(response.data.images); // Access 'images' array
-//             })
-//             .catch(error => {
-//                 console.error("Error fetching images:", error);
-//             });
-//     }, []);
-
-//     return (
-//         <div>
-//             <h2>Image Gallery</h2>
-//             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-//                 {images.map((image, index) => (
-//                     <img key={index} src={`http://127.0.0.1:8000${image}`} 
-//                          alt="Fetched from API" width="200" height="200" />
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Projects;

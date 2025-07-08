@@ -251,12 +251,12 @@ button:focus {
 
 .heading {
   font-size: clamp(25px, 3vw, 40px) !important;
-  padding-left: 45px !important;
+  padding-left: 12px !important;
 }
 
 .heading-name {
   font-size: clamp(25px, 3vw, 40px) !important;
-  padding-left: 45px !important;
+  padding-left: 12px !important;
 }
 
 .main-name {
@@ -516,7 +516,7 @@ button:focus {
     line-height: 1.7em !important;
 }
   .small-row{
-    padding: 0px 10px !important;
+    padding: 0px 5px !important;
   }
   .container, .container-sm {
     max-width: 100% !important;
@@ -543,14 +543,14 @@ button:focus {
 }
 .heading {
   font-size: clamp(10px, 0.9rem, 37px) !important;
-  padding-left: 10px !important;
+  padding-left: 5px !important;
 }
 .heading-name {
   font-size: clamp(10px, 1rem, 37px) !important;
-  padding-left: 10px !important;
+  padding-left: 5px !important;
 }
 .typer {
-  padding-left: 10px !important;
+  padding-left: 5px !important;
 }
 .Typewriter__wrapper {
   font-size: clamp(10px, 0.9rem, 37px) !important;
@@ -764,7 +764,7 @@ button:focus {
 
 .img-fluid {
   max-width: 80%;
-  height: auto !important;
+  height: 25vw !important;
 }
 
 .btn-primary {
@@ -1187,7 +1187,7 @@ button:focus {
 
 .contact-section {
   /* background-color: rgb(236, 236, 236); */
-  padding: 20px;
+  padding: 20px 70px;
 }
 
 #contact-box {
