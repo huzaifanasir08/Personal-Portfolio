@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import { ToastContainer } from "react-toastify";
 import ParticleBackground from "./components/Particle";
 import "react-toastify/dist/ReactToastify.css";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import {
   BrowserRouter as Router,
   Route,
@@ -35,6 +36,7 @@ function App() {
     <Router>
       
       <ToastContainer />
+      <SpeedInsights/>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />

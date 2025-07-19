@@ -5,7 +5,7 @@ import { ImCheckmark } from "react-icons/im";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
-      <Card.Body>
+      <Card.Body style={{ paddingLeft: "0px" }}>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify", fontSize: "clamp(15px, 3vw, 22px)" }}>
             I am <span className="purple">Huzaifa Nasir </span>

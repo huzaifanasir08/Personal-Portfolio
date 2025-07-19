@@ -32,7 +32,7 @@ function Home() {
               </div>
             </Col>
 
-            <Col className="pic" md={5} style={{ paddingBottom: 0, zIndex: 1 }}>
+            <Col className="pic" md={5} style={{ paddingBottom: 0, zIndex: 1, display: "flex", justifyContent: "end", paddingRight: "20px" }}>
               <img
                 src={profile}
                 alt="home pic"

@@ -12,7 +12,7 @@ function About() {
   return (
     <Container fluid className="about-section">
       <Container className="about-sec">
-        <Row className="about-con" style={{ justifyContent: "center", padding: "10px", zIndex: "1"}}>
+        <Row className="about-con" style={{ justifyContent: "space-between", zIndex: "1"}}>
           <Col className="my-heading"
             md={7}
             style={{
@@ -27,7 +27,7 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ padding: "0px 40px 50px 60px", marginTop: "50px", zIndex: "1" }}
+            style={{ padding: "0px 0px 50px 60px", marginTop: "50px", zIndex: "1", marginRight: "-40px" }}
             className="about-img"
           >
             <img src={profile}  alt="about" className="img-fluid profile-pic" />

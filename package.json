@@ -12,6 +12,7 @@
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
+    "@vercel/speed-insights": "^1.2.0",
     "ajv": "^8.0.0",
     "axios": "^1.7.0",
     "bootstrap": "^5.3.3",

@@ -1251,8 +1251,9 @@ button[type="submit"] {
 .info {
   margin-left: 40px;
   display: grid;
-  justify-content: center;
-  padding: 85px 0 85px 0;
+  justify-content: end;
+  padding: 85px 15px 85px 0;
+  grid-template-columns: 1fr 1fr
 }
 
 .info img {
