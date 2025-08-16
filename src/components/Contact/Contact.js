@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import '../../style.css';
 import Particle from '../Particle.js';
-import { Link } from 'react-router-dom';
 import github from '../../Assets/github.png';
 import linkedin from '../../Assets/linkedin.png';
 import email from '../../Assets/email.png';
 import phone from '../../Assets/phone.png';
 import whatsapp from '../../Assets/whatsapp.png';
-import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';  // Import toast styles
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -37,75 +35,136 @@ const Contact = () => {
         });
     };
 
-    const clicked = () => {
-        console.log("clicked");
-    }
-const handleSubmit = async (e) => {
-    e.preventDefault();
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const toastId = toast.loading("Sending message...");
+        setIsLoading(true);
 
-    const toastId = toast.loading("Sending message..."); // Show loading toast
+        // Build Web3Forms payload
+        const payload = {
+            access_key: "20fdc1a4-75ea-4f82-ae24-8a65210faba2", // your Web3Forms access key
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+        };
 
-    try {
-        const response = await axios.post("https://huzaifanasir.pythonanywhere.com/contact/", formData, {
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(payload),
+            });
 
-        console.log("Response:", response.data);
+            const json = await response.json();
 
-        toast.update(toastId, { 
-            render: "Message sent successfully!", 
-            type: "success", 
-            isLoading: false, 
-            autoClose: 3000 
-        }); // Update toast on success
-
-        clearForm();
-    } catch (error) {
-        console.error("Error submitting form:", error);
-
-        toast.update(toastId, { 
-            render: "Message sending failed.", 
-            type: "error", 
-            isLoading: false, 
-            autoClose: 3000 
-        }); // Update toast on failure
-    }
-};
-
+            if (response.status === 200) {
+                toast.update(toastId, {
+                    render: "Message sent successfully!",
+                    type: "success",
+                    isLoading: false,
+                    autoClose: 3000,
+                });
+                clearForm();
+            } else {
+                console.error("Submission error:", json);
+                toast.update(toastId, {
+                    render: json.message || "Form submission failed.",
+                    type: "error",
+                    isLoading: false,
+                    autoClose: 3000,
+                });
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            toast.update(toastId, {
+                render: "Something went wrong while submitting.",
+                type: "error",
+                isLoading: false,
+                autoClose: 3000,
+            });
+        } finally {
+            setIsLoading(false);
+        }
+    };
 
     return (
         <section id="contact-sector">
-            <Particle />
+            {/* <Particle /> */}
             <div className="contact-section">
-            <h1>
-            
-            Need Help? <strong className="purple">Ask Me</strong>
-            </h1>
+                <h1>
+                    Need Help? <strong className="purple">Ask Me</strong>
+                </h1>
                 <div id="contact-box">
                     <div className="contact-container">
-                    {/* onSubmit={handleSubmit} */}
-                        <form className="contact-form" style={{ textAlign: 'left', color: 'white' }} >
+                        <form
+                            className="contact-form"
+                            style={{ textAlign: "left", color: "white" }}
+                            onSubmit={handleSubmit}
+                        >
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input value={formData.name} onChange={handleChange} type="text" id="name" name="name" required />
+                                <input
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
-                                <input value={formData.email} onChange={handleChange} type="email" id="email" name="email" required />
+                                <input
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="subject">Subject</label>
-                                <input value={formData.subject} onChange={handleChange} type="text" id="subject" name="subject" required />
+                                <input
+                                    value={formData.subject}
+                                    onChange={handleChange}
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    required
+                                />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Message</label>
-                                <textarea value={formData.message} onChange={handleChange} id="message" name="message" rows="5" required></textarea>
+                                <textarea
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    required
+                                ></textarea>
                             </div>
-                            {/* onClick={handleSubmit} className="disabled"  */}
-                            <button className="disabled" type='submit'>
-                                <Link to={"/contact"} style={{textDecoration:"blink", color:"rgb(11 10 69)"}}>Coming Soon</Link>                                         
+
+                            <button
+                                type="submit"
+                                disabled={isLoading}
+                                style={{
+                                    backgroundColor: isLoading
+                                        ? "#888"
+                                        : "rgb(225 225 225)",
+                                    color: "rgb(11 11 29)",
+                                    padding: "10px 20px",
+                                    borderRadius: "5px",
+                                    border: "none",
+                                    cursor: isLoading ? "not-allowed" : "pointer",
+                                }}
+                            >
+                                {isLoading ? "Sending..." : "Send Message"}
                             </button>
                         </form>
                     </div>
@@ -115,38 +174,72 @@ const handleSubmit = async (e) => {
                         <div id="phone">
                             <div className="info-item">
                                 <img src={phone} alt="Phone" />
-                                <a target="_blank" rel="noopener noreferrer" href="tel:03201511248">03201511248</a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="tel:03201511248"
+                                >
+                                    03201511248
+                                </a>
                             </div>
                         </div>
                         <div id="whatsapp">
                             <div className="info-item">
                                 <img src={whatsapp} alt="WhatsApp" />
-                                <a target="_blank" rel="noopener noreferrer" href="https://wa.me/923201511248">03201511248</a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://wa.me/923201511248"
+                                >
+                                    03201511248
+                                </a>
                             </div>
                         </div>
                         <div id="email">
                             <div className="info-item">
                                 <img src={email} alt="Email" />
-                                <a target="_blank" rel="noopener noreferrer" href="mailto:huzaifanasirbutt@gmail.com">huzaifanasirbutt@gmail.com</a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="mailto:huzaifanasirbutt@gmail.com"
+                                >
+                                    huzaifanasirbutt@gmail.com
+                                </a>
                             </div>
                         </div>
                         <div id="linkedin">
                             <div className="info-item">
                                 <img src={linkedin} alt="LinkedIn" />
-                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/muhammad-huzaifa-nasir/">Huzaifa Nasir</a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/in/muhammad-huzaifa-nasir/"
+                                >
+                                    Huzaifa Nasir
+                                </a>
                             </div>
                         </div>
                         <div id="gitHub">
                             <div className="info-item">
                                 <img src={github} alt="GitHub" />
-                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/huzaifanasir08">Huzaifa Nasir</a>
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://github.com/huzaifanasir08"
+                                >
+                                    Huzaifa Nasir
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             {/* Toast Notifications */}
-            <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} />
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+            />
         </section>
     );
 };
