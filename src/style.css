@@ -1,3 +1,8 @@
+canvas[data-generated="true"] {
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -31,6 +36,15 @@ button:focus {
   transition: 0.3s !important;
 }
 
+.home-content,
+.home-about,
+.home-about-section,
+.services-project-card,
+.button_more,
+.home-about-social {
+  position: relative;
+  z-index: 10;
+}
 
 
 /* --------- */
@@ -235,7 +249,7 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background-image: var(--image-gradient), url(./Assets/home-bg1.png);
   background-position: top center;
   background-repeat: no-repeat;
@@ -719,6 +733,28 @@ button:focus {
   box-shadow: 0 4px 4px 5px #005e6d !important;
 }
 
+.services-project-card {
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.services-project-card-view {
+  box-shadow: 0 4px 5px 3px #005e6d !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.services-project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px #005e6d !important;
+}
+
 .blog-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
@@ -778,6 +814,19 @@ button:focus {
   background-color: #39c3d8 !important;
   border-color: #39c3d8 !important;
 }
+
+.hero-btn {
+  color: #42e5ff !important;
+  background-color: #42e6ff00 !important;
+  border-color: #42e5ff !important;
+}
+
+.hero-btn:hover {
+  color: #42e6ffae !important;
+  background-color: #42e6ff00 !important;
+  border-color: #42e6ffae !important;
+}
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;

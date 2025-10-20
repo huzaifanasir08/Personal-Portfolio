@@ -6,13 +6,7 @@ import Tilt from "react-parallax-tilt";
 import "../../style.css";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
-import {
-  AiFillGithub,
-  AiOutlineWhatsApp,
-  AiFillInstagram,
-  AiOutlinePhone,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+
 import Particle from "../Particle";
 
 function Home2() {
@@ -27,7 +21,6 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               Full-Stack Developer &nbsp;<span className="purple">|</span>&nbsp; AI/ML Enthusiast &nbsp;<span className="purple">|</span>&nbsp; IT Consultant &nbsp; <span className="purple">「 </span><span style={{color:'green'}}>✔</span> ᵛᵉʳᶦᶠᶦᵉᵈ<span className="purple"> 」</span>
-              {/* Innovating Digital Solutions &nbsp;|&nbsp;  */}
               <br />
               <br />As a Software Engineer and Full-Stack Web Developer, I specialize in building seamless, scalable, and high-performance applications that integrate intuitive user experiences with powerful backend solutions. With expertise in Django, AI/ML, and digital marketing, I bring a multidisciplinary approach to software development, ensuring innovative and impactful solutions.
               <i>
@@ -52,66 +45,6 @@ function Home2() {
           <Tilt>
               <img src={profile} className="img-fluid" alt="avatar" />
             </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/huzaifanasir08"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://wa.me/923201511248"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineWhatsApp />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/huzaifa-nasir-86911b344"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/muhammad_huzaifanasir"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="tel:03201511248"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiOutlinePhone />
-                </a>
-              </li>
-            </ul>
           </Col>
         </Row>
       </Container>

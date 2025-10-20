@@ -8,7 +8,7 @@ import phone from '../../Assets/phone.png';
 import whatsapp from '../../Assets/whatsapp.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+<script src="https://web3forms.com/client/script.js" async defer></script>
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: "",
@@ -149,7 +149,7 @@ const Contact = () => {
                                     required
                                 ></textarea>
                             </div>
-
+                            <div className="h-captcha" data-captcha="true"></div>
                             <button
                                 type="submit"
                                 disabled={isLoading}
