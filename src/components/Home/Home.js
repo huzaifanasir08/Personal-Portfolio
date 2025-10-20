@@ -13,7 +13,7 @@ function Home() {
 
   const handleViewResume = () => {
     // Add your resume link here
-    window.open('/path-to-your-resume.pdf', '_blank');
+    window.open('https://drive.google.com/drive/folders/1NZ7JZOLDAbggeNSa0-HSdsfVIwuPLKUU?usp=sharing', '_blank');
   };
 
   const handleHireMe = () => {
@@ -53,7 +53,7 @@ function Home() {
                   <Button 
                     size="lg"
                     style={{ padding: "12px 30px", cursor: "pointer", pointerEvents: "auto" }}
-                    onClick={handleViewResume}
+                    onClick={handleHireMe}
                   >
                     Hire Me
                   </Button>
@@ -61,7 +61,7 @@ function Home() {
                     className="hero-btn"
                     size="lg"
                     style={{ padding: "12px 30px", cursor: "pointer", pointerEvents: "auto", backgroundColor: "rgba(136, 1, 1, 1)" }}
-                    onClick={handleHireMe}
+                    onClick={handleViewResume}
                   >
                     View Resume
                   </Button>
