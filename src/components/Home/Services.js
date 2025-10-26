@@ -131,7 +131,7 @@ function Services() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/huzaifa-nasir-86911b344"
+                  href="https://www.linkedin.com/in/muhammad-huzaifanasir"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

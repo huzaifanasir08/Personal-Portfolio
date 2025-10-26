@@ -213,7 +213,7 @@ const Contact = () => {
                                 <a
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    href="https://www.linkedin.com/in/muhammad-huzaifa-nasir/"
+                                    href="https://www.linkedin.com/in/muhammad-huzaifa-nasir"
                                 >
                                     Huzaifa Nasir
                                 </a>
