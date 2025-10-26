@@ -32,7 +32,7 @@ function About() {
             style={{ padding: "0px 0px 50px 0px", marginTop: "50px", zIndex: "1", marginRight: "-32px", width: "35.666667%", }}
             className="about-img"
           >
-            <img src={profile}  alt="about" className="img-fluid profile-pic" />
+            <img src={profile}  alt="about" className="about-img-fluid profile-pic" />
           </Col>
         </Row>
         <h1  style={{ marginTop: "40px", marginBottom: "10px" }} >
@@ -49,7 +49,7 @@ function About() {
         </h1>
         <Courses />
 
-        <h1>
+        <h1 style={{marginTop: "30px"}}>
           <strong className="purple">Tools & Tech</strong> I use
         </h1>
         <Toolstack />

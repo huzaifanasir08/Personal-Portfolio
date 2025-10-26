@@ -19,7 +19,7 @@ import {
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "20px", marginTop: '25px' }}>
+    <Row style={{ justifyContent: "space-between", paddingBottom: "20px", marginTop: '25px' }}>
       {/* <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
         <div style={{fontSize:'1rem'}}>Visual Studio Code</div>
