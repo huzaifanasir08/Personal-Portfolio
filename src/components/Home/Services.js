@@ -68,7 +68,7 @@ function Services() {
           </Col>
         </Row>
 
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           {services.map((service, index) => (
             <Col md={6} lg={4} className="services-project-card" key={index} style={{ display: "flex" }}>
               <Tilt style={{ width: "100%" }}>
