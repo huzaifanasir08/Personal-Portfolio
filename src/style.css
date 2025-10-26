@@ -343,18 +343,8 @@ button:focus {
   flex-direction: row !important;
   height: 10vh !important;
 }
-.profile-picture-small {
-  max-width: 90% !important;
-  height: auto !important;
-  border-radius: 0% !important;
-  display: block !important;
 
-}
-.home-content .pic {
-  width: 40% !important;
-  position: absolute; 
-  right: 10px;
-}
+
 .home-content .description {
   width: 100% !important;
   position: absolute;
@@ -372,13 +362,14 @@ button:focus {
 .img-fluid {
     max-width: 60% !important;
 }
-
+.btn-nav{
+  padding-right: 0px;
+}
+.navbar-toggler{
+  padding-right: 0px !important;
+}
 }
 
-.profile-picture-small {
-  display: none;
-
-}
 .myAvtar-small{
   display: none;
 }
@@ -564,7 +555,7 @@ button:focus {
   padding-left: 5px !important;
 }
 .typer {
-  padding-left: 5px !important;
+  padding: 0 5px !important;
 }
 .Typewriter__wrapper {
   font-size: clamp(10px, 0.9rem, 37px) !important;
@@ -734,11 +725,11 @@ button:focus {
 }
 
 .services-project-card {
-  padding-top: 25px !important;
-  padding-bottom: 25px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+  padding-top: 25px ;
+  padding-bottom: 25px ;
+  padding-left: 25px ;
+  padding-right: 25px ;
+  height: auto ;
 }
 
 .services-project-card-view {

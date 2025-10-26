@@ -7,14 +7,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body style={{ paddingLeft: "0px" }}>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify", fontSize: "clamp(15px, 3vw, 22px)" }}>
-            I am <span className="purple">Huzaifa Nasir </span>
-            from <span className="purple"> Sialkot, Pakistan. </span>
-            I am currently employed as a backend developer at <span className="purple">Datafunction.ca.</span> I'm pursuing<span className="purple"> BS Software Engineering</span> from the<span className="purple"> University of Sialkot.</span> I am a passionate learner who's always willing to learn and work across technologies and domains. I love to explore new technologies and leverage those to solve real-life problems. I am a quick learner and a team player who loves to be surrounded by smart and passionate people.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
+          <p style={{ textAlign: "justify", fontSize: "clamp(15px, 3vw, 22px)" }}> I’m <span className="purple">Huzaifa Nasir</span> from <span className="purple">Sialkot, Pakistan</span>. Currently, I work as a <span className="purple">Senior Backend Developer</span> at <span className="purple">Datafunction.ca</span>, where I build scalable and efficient solutions that power real-world applications. I completed my <span className="purple">BS in Software Engineering</span> from the <span className="purple">University of Sialkot</span>. I’m a passionate and curious learner who loves exploring emerging technologies and turning complex problems into practical, impactful solutions. I adapt quickly, thrive in collaborative environments, and enjoy working with driven, talented people. <br /><br /> Apart from coding, some other activities that I love to do! </p>
           <ul className="other-activity">
             <li className="about-activity">
               <ImCheckmark /> Explore New Tech

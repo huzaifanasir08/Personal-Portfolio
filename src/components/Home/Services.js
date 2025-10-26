@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import "../../style.css";
 import Particle from "../Particle";
+import "./Home.css";
 import {
   AiOutlineWechat,
   AiOutlineCode,
@@ -55,14 +55,14 @@ function Services() {
 
   return (
     <Container fluid className="home-about-section" id="services">
-      <Container style={{padding:"0 18px 0 5px" }}>
+      <Container className='serv-cards'>
         {/* <Particle /> */}
         <Row style={{ justifyContent: "center", paddingBottom: "0px" }}>
           <Col md={12} style={{ paddingBottom: "0" }}>
             <h1 className="project-heading" style={{ textAlign: "center" }}>
               My <strong className="purple">Services</strong>
             </h1>
-            <p style={{ color: "white", textAlign: "center", fontSize: "1.3rem" }}>
+            <p className="serv-text">
               Comprehensive solutions tailored to your digital needs
             </p>
           </Col>

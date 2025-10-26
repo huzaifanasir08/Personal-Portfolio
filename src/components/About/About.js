@@ -18,6 +18,8 @@ function About() {
             style={{
               justifyContent: "center",
               paddingBottom: "50px",
+              width: "65.666667%",
+
             }}
           >
             <h1>
@@ -27,12 +29,17 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ padding: "0px 0px 50px 60px", marginTop: "50px", zIndex: "1", marginRight: "-40px" }}
+            style={{ padding: "0px 0px 50px 0px", marginTop: "50px", zIndex: "1", marginRight: "-32px", width: "35.666667%", }}
             className="about-img"
           >
             <img src={profile}  alt="about" className="img-fluid profile-pic" />
           </Col>
         </Row>
+        <h1  style={{ marginTop: "40px", marginBottom: "10px" }} >
+          Programming <strong className="purple">Skillset </strong>
+        </h1>
+
+        <Techstack />
         <h1>
           My <strong className="purple">Education</strong>
         </h1>
@@ -41,11 +48,6 @@ function About() {
           Other <strong className="purple">Courses</strong>
         </h1>
         <Courses />
-        <h1  style={{ marginTop: "40px", marginBottom: "10px" }} >
-          Programming <strong className="purple">Skillset </strong>
-        </h1>
-
-        <Techstack />
 
         <h1>
           <strong className="purple">Tools & Tech</strong> I use

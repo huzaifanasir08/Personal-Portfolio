@@ -25,6 +25,18 @@ function Toolstack() {
         <div style={{fontSize:'1rem'}}>Visual Studio Code</div>
       </Col> */}
       <Col xs={4} md={2} className="tech-icons">
+        <SiDjango/>
+        <div style={{fontSize:'1rem'}}>Django</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPython/>
+        <div style={{fontSize:'1rem'}}>Python</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFastapi />
+        <div style={{fontSize:'1rem'}}>FastAPI</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
         <div style={{fontSize:'1rem'}}>Postman</div>
       </Col>
@@ -59,14 +71,6 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiAxios/>
         <div style={{fontSize:'1rem'}}>Axios</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDjango/>
-        <div style={{fontSize:'1rem'}}>Django</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPython/>
-        <div style={{fontSize:'1rem'}}>Python</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPandas/>

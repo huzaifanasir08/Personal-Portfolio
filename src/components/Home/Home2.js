@@ -3,10 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import programmer from "../../Assets/programmer.png";
 import profile from "../../Assets/profile.png";
 import Tilt from "react-parallax-tilt";
-import "../../style.css";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
-
+import "./Home.css";
 import Particle from "../Particle";
 
 function Home2() {
@@ -19,12 +18,12 @@ function Home2() {
             <h1 style={{ textAlign: "left" }} className="home-about-title">
               Decoding my expertise<span className="purple">—</span>who am I?
             </h1>
-            <p className="home-about-body">
-              Full-Stack Developer &nbsp;<span className="purple">|</span>&nbsp; AI/ML Enthusiast &nbsp;<span className="purple">|</span>&nbsp; IT Consultant &nbsp; <span className="purple">「 </span><span style={{color:'green'}}>✔</span> ᵛᵉʳᶦᶠᶦᵉᵈ<span className="purple"> 」</span>
+            <p style={{textAlign:"justify"}} className="home-about-body">
+              Senior Django Developer &nbsp;<span className="purple">|</span> Full-Stack Web Developer &nbsp;<span className="purple">|</span>&nbsp; ML Engineer &nbsp;<span className="purple">「 </span><span style={{color:'green'}}>✔</span> ᵛᵉʳᶦᶠᶦᵉᵈ<span className="purple"> 」</span>
               <br />
-              <br />As a Software Engineer and Full-Stack Web Developer, I specialize in building seamless, scalable, and high-performance applications that integrate intuitive user experiences with powerful backend solutions. With expertise in Django, AI/ML, and digital marketing, I bring a multidisciplinary approach to software development, ensuring innovative and impactful solutions.
+              <br/>As a <span className="purple">Senior Django Backend</span> & <span className="purple">AI Developer</span>, I architect and deliver scalable, high-performance, and intelligently designed applications that blend robust backend engineering with seamless user experiences. My expertise spans <span className="purple">Django</span>, <span className="purple">Machine Learning</span>, and modern <span className="purple">Full-Stack Frameworks</span>, allowing me to build solutions that are not just functional, but strategic, efficient, and future-ready. I thrive on solving complex problems, optimizing performance, and driving innovation that actually moves the needle.
               <i>
-                {/* <b className="purple"> C++, Javascript and Go. </b> */}
+                
               </i>
               <br />
               <br />
@@ -43,7 +42,7 @@ function Home2() {
           <Col md={4} className="myAvtar-small">
             
           <Tilt>
-              <img src={profile} className="img-fluid" alt="avatar" />
+              <img src={profile} className="img-flui" alt="avatar" />
             </Tilt>
           </Col>
         </Row>

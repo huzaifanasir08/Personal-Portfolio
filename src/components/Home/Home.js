@@ -7,7 +7,7 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Services from "./Services";
 import Type from "./Type";
-
+import "./Home.css";
 
 function Home() {
 
@@ -32,7 +32,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content" style={{ position: "relative", zIndex: 10 }}>
-          <Row style={{ height: "68vh", display: "flex", justifyContent: "center", alignItems: "center", paddingBottom: "70px" }}>
+          <Row style={{ height: "68vh", justifyContent: "center", alignItems: "center", paddingBottom: "70px" }}>
             <Col md={7} className="home-header description">
               <h1 style={{ paddingBottom: 5 }} className="heading">
                 Hi There!
@@ -68,7 +68,7 @@ function Home() {
                 </div>
               </div>
             </Col>
-            <Col className="pic" md={5} style={{ paddingBottom: 0, zIndex: 1, display: "flex", justifyContent: "end", paddingRight: "20px" }}>
+            <Col className="pic" md={5} style={{ paddingBottom: 0, zIndex: 1, justifyContent: "end", paddingRight: "20px" }}>
               <img
                 src={profile}
                 alt="home pic"
@@ -81,7 +81,7 @@ function Home() {
                 src={progarmmer}
                 alt="home pic"
                 className="profile-picture-small"
-                style={{ maxHeight: "450px", height: '26vw', borderRadius: "50%" }}
+                style={{ maxHeight: "450px", height: '26vw'}}
               />
             </Col>
           </Row>

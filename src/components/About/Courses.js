@@ -13,7 +13,7 @@ const Courses = () => {
         },
         {
             institution: 'Other Platforms',
-            course: ['Intro to HTML, CSS, JS', 'Django Full Stack Web Development', 'Development on Django Framework', 'Desktop Application Development with C# ASP.net'],
+            course: ['Intro to HTML, CSS, JS', 'Django Full Stack Web Development', 'Development on Django Framework', 'Advance FastAPI', 'Building RESTful APIs with FastAPI', 'Python for Data Science'],
         }
     ];
 

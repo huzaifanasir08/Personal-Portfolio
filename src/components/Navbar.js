@@ -10,42 +10,32 @@ function NavBar() {
   const [bgColor, setBgColor] = useState("rgb(0 0 0 / 0%)");
 
   useEffect(() => {
-    const scrollHandler = () => {
-      updateNavbar(window.scrollY >= 20);
-    };
-
+    const scrollHandler = () => updateNavbar(window.scrollY >= 20);
     window.addEventListener("scroll", scrollHandler);
-    
-    // Cleanup event listener on component unmount
     return () => window.removeEventListener("scroll", scrollHandler);
   }, []);
 
-  const changeBg = () => {
-    setBgColor((prevColor) =>
-      prevColor === "rgb(0 0 0 / 0%)" ? "#000000c7" : "rgb(0 0 0 / 0%)"
-    );
-    console.log("Background changed:", bgColor);
+  const getBackgroundColor = () => {
+    if (expand) return "#000000c7";
+    if (navColour) return "#000000c7";
+    return "rgb(0 0 0 / 0%)";
   };
-
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
-      style={{ backgroundColor: bgColor }} // Apply React state
+      style={{ backgroundColor: getBackgroundColor() }}
     >
       <Container>
-        
         <Navbar.Brand as={Link} to="/" className="d-flex">
           <h2>Portfolio</h2>
         </Navbar.Brand>
         <Navbar.Toggle
+          className="btn-nav"
           aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-            changeBg();
-          }}
+          onClick={() => updateExpanded(expand ? false : "expanded")}
         >
           <span></span>
           <span></span>
@@ -58,19 +48,16 @@ function NavBar() {
                 Home
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
                 About
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
                 Projects
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}>
                 Contact

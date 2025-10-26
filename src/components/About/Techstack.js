@@ -32,43 +32,33 @@ const Techstack = () => {
   return (
     <div className="skill-level">
       <div className="progress-container striped right-fade-z">
+        <div className="progress-bar"  data-progress="99">
+          Python 99%
+        </div>
+      </div>
+      <div className="progress-container striped right-fade-z">
+        <div className="progress-bar"  data-progress="97">
+          Django Rest Framework 97%
+        </div>
+      </div>
+      <div className="progress-container striped right-fade-z">
+        <div className="progress-bar"  data-progress="96">
+          FastAPI 96%
+        </div>
+      </div>
+      <div className="progress-container striped right-fade-z">
         <div className="progress-bar"  data-progress="98">
           HTML, CSS, JS 98%
         </div>
       </div>
       <div className="progress-container striped right-fade-z">
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="95">
+        <div className="progress-bar" data-progress="95">
           React.JS 95%
         </div>
       </div>
-      <div className="progress-container striped right-fade-z">
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="97">
-          Python 97%
-        </div>
-      </div>
-      <div className="progress-container striped right-fade-z">
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="95">
-          Django Rest Framework 95%
-        </div>
-      </div>
-      <div className="progress-container striped right-fade-z">
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="55">
-          WordPress 55%
-        </div>
-      </div>
       <div className="progress-container striped right-fade-z" style={{ animationDelay: '1s' }}>
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="90">
-          MongoDb 90%
-        </div>
-      </div>
-      <div className="progress-container striped right-fade-z" style={{ animationDelay: '1s' }}>
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="90">
-          Microsoft SQL 90%
-        </div>
-      </div>
-      <div className="progress-container striped right-fade-z" style={{ animationDelay: '1s' }}>
-        <div className="progress-bar" style={{ width: '0%' }} data-progress="95">
-          MySQL 95%
+        <div className="progress-bar" data-progress="97">
+          SQL Database 97%
         </div>
       </div>
     </div>

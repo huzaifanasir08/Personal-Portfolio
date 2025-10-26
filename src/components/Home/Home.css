@@ -1,0 +1,302 @@
+/* Add these responsive styles to your existing CSS */
+.pic {
+  display: flex;
+}
+
+.home-content .row {
+  display: flex;
+}
+.profile-picture-small {
+    display: none;
+}
+.serv-cards{
+  padding: 0 18px 0 5px;
+}
+
+.serv-text{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+  
+/* Home Section Mobile Responsiveness */
+@media (max-width: 767px) {
+  .home-section {
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+  }
+
+  .home-content {
+    padding: 6rem 0 1rem !important;
+  }
+
+  .home-content .row {
+    height: auto !important;
+    padding-bottom: 30px !important;
+  }
+
+  .home-header.description {
+    text-align: center;
+  }
+
+  .heading {
+    font-size: clamp(20px, 5vw, 35px) !important;
+    text-align: center;
+  }
+
+  .heading-name {
+    font-size: clamp(20px, 5vw, 35px) !important;
+    text-align: center;
+  }
+
+  .typer {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+
+  .Typewriter__wrapper {
+    font-size: clamp(18px, 4vw, 35px) !important;
+  }
+
+  .Typewriter__cursor {
+    font-size: clamp(18px, 4vw, 35px) !important;
+  }
+
+  .typer p {
+    font-size: 1rem !important;
+    padding: 0 15px;
+  }
+
+  .hero-btns {
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+
+  .hero-btns .btn {
+    padding: 10px 25px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .profile-picture {
+    max-height: 300px !important;
+    height: auto !important;
+    margin: 20px auto 0 !important;
+    display: block;
+  }
+
+  .pic {
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-content {
+    margin-top: 40px;
+    padding: 4rem 0 1rem !important;
+    display: grid;
+  }
+  .home-section {
+    height: 55vh;
+}
+
+  .home-content .row {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+  }
+
+  .heading {
+    text-align: left;
+  }
+
+  .heading-name {
+    text-align: left;
+  }
+
+  .profile-picture-small {
+    display: none;
+
+  }
+
+  .typer p {
+    font-size: 1rem !important;
+    padding: 0px;
+  }
+
+  .heading {
+    font-size: clamp(16px, 4.5vw, 30px) !important;
+    padding-left: 0 !important;
+  }
+.img-flui {
+  max-width: 80%;
+  height: 40vw !important;
+}
+  .heading-name {
+    font-size: clamp(16px, 4.5vw, 30px) !important;
+    padding-left: 0 !important;
+  }
+
+  .Typewriter__wrapper {
+    font-size: clamp(14px, 3.5vw, 30px) !important;
+  }
+
+  .Typewriter__cursor {
+    font-size: clamp(14px, 3.5vw, 30px) !important;
+  }
+
+  .typer p {
+    font-size: 0.85rem !important;
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+    text-align: justify;
+  }
+
+  .hero-btns {
+    gap: 10px !important;
+    margin-top: 15px !important;
+  }
+
+  .hero-btns .btn {
+    padding: 8px 20px !important;
+    font-size: 0.85rem !important;
+    width: 100%;
+  }
+
+  .profile-picture {
+    display: none;
+    max-height: 250px !important;
+  }
+
+  .pic {
+    display: flex;
+  }
+
+  .profile-picture {
+    display: none;
+  }
+
+  .wave {
+    font-size: 1.2em;
+  }
+}
+
+/* Home2 Section Mobile Responsiveness */
+@media (max-width: 767px) {
+  .home-about-description {
+    padding-top: 20px !important;
+  }
+
+  .home-about-title {
+    font-size: clamp(22px, 5vw, 35px) !important;
+    text-align: center !important;
+  }
+
+  .home-about-body {
+    text-align: justify !important;
+  }
+
+  .button_more {
+    margin: 15px auto 0 !important;
+    display: block !important;
+  }
+
+  .myAvtar {
+    padding-top: 30px !important;
+  }
+
+  .home-about {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-about-description {
+    padding-top: 10px !important;
+  }
+
+  .home-about-title {
+    font-size: clamp(18px, 4.5vw, 30px) !important;
+  }
+
+  .home-about-body {
+    font-size: 0.85rem !important;
+    padding-top: 15px !important;
+  }
+
+  .button_more {
+    font-size: 0.85rem !important;
+    padding: 8px 20px !important;
+  }
+
+  .small-row {
+    padding: 0 10px !important;
+  }
+  .serv-text{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+  
+}
+
+/* Services Section Mobile Responsiveness */
+@media (max-width: 767px) {
+  .services-project-card {
+    padding: 15px 10px !important;
+  }
+
+  .services-project-card-view {
+    margin-bottom: 15px;
+  }
+
+  .services-project-card-view .card-body {
+    padding: 20px 15px !important;
+  }
+
+  .services-project-card-view div[style*="fontSize: 3em"] {
+    font-size: 2.5em !important;
+  }
+
+  .services-project-card-view .card-title {
+    font-size: 1.1rem !important;
+  }
+
+  .services-project-card-view .card-text {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .services-project-card {
+    padding: 10px 5px 10px 7px !important
+  }
+  .serv-cards{
+  padding: 0;
+}
+
+  .services-project-card-view .card-body {
+    padding: 15px 10px !important;
+  }
+.services-project-card-view div[style*="fontSize: 3em"] {
+    font-size: 2em !important;
+    margin-bottom: 10px !important;
+  }
+
+  .services-project-card-view .card-title {
+    font-size: 1rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .services-project-card-view .card-text {
+    font-size: 0.85rem !important;
+  }
+
+  .project-heading {
+    font-size: 1.3rem !important;
+    padding-bottom: 5px !important;
+  }
+
+  .home-about-section p[style*="fontSize: 1.3rem"] {
+    font-size: 1rem !important;
+  }
+}
