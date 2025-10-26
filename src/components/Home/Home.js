@@ -15,17 +15,11 @@ function Home() {
     // Add your resume link here
     window.open('https://drive.google.com/drive/folders/1NZ7JZOLDAbggeNSa0-HSdsfVIwuPLKUU?usp=sharing', '_blank');
   };
-
   const handleHireMe = () => {
-    // Scroll to contact section or open email
-    console.log("Hire Me button clicked");
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      window.location.href = 'mailto:huzaifanasirbutt@gmail.com';
-    }
+    // Add your resume link here
+    window.open('https://calendar.app.google/zfHN7vBTX4fZzAz4A', '_blank');
   };
+
 
   return (
     <section>
@@ -55,7 +49,7 @@ function Home() {
                     style={{ padding: "12px 30px", cursor: "pointer", pointerEvents: "auto" }}
                     onClick={handleHireMe}
                   >
-                    Hire Me
+                    Book a Meeting
                   </Button>
                   <Button 
                     className="hero-btn"
