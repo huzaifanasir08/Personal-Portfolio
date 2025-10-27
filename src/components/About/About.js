@@ -7,18 +7,19 @@ import profile from "../../Assets/profile.png";
 import Toolstack from "./Toolstack";
 import Education from "./Education";
 import Courses from "./Courses";
-
+import "../../style.css"
+import './About.css'
 function About() {
   return (
     <Container fluid className="about-section">
       <Container className="about-sec">
         <Row className="about-con" style={{ justifyContent: "space-between", zIndex: "1"}}>
-          <Col className="my-heading"
+          <Col className="about-con-txt"
             md={7}
             style={{
               justifyContent: "center",
               paddingBottom: "50px",
-              width: "65.666667%",
+              
 
             }}
           >
@@ -29,7 +30,7 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ padding: "0px 0px 50px 0px", marginTop: "50px", zIndex: "1", marginRight: "-32px", width: "35.666667%", }}
+            style={{ padding: "0px 0px 50px 0px", marginTop: "50px", zIndex: "1", marginRight: "-32px" }}
             className="about-img"
           >
             <img src={profile}  alt="about" className="about-img-fluid profile-pic" />

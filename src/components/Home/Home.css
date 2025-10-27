@@ -90,7 +90,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .home-content {
     margin-top: 40px;
     padding: 4rem 0 1rem !important;
@@ -209,7 +209,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .home-about-description {
     padding-top: 10px !important;
   }
@@ -266,7 +266,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .services-project-card {
     padding: 10px 5px 10px 7px !important
   }

@@ -93,7 +93,7 @@ const Contact = () => {
 
     return (
         <section id="contact-sector">
-            {/* <Particle /> */}
+            <Particle />
             <div className="contact-section">
                 <h1>
                     Need Help? <strong className="purple">Ask Me</strong>
