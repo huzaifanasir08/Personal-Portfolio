@@ -1,5 +1,4 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Tilt from "react-parallax-tilt";
 import "./Home.css";
 import {
   AiOutlineWechat,
@@ -22,32 +21,32 @@ function Services() {
     {
       icon: <AiOutlineThunderbolt />,
       title: "AI Powered Solutions",
-      description: "Intelligent systems leveraging machine learning algorithms for predictive analytics and automation.",
+      description: "Cutting-edge AI-powered solutions leveraging advanced machine learning algorithms, predictive analytics, and intelligent automation to streamline business processes, optimize performance, and enable data-driven decision making.",
     },
     {
       icon: <AiOutlineWechat />,
       title: "AI Chatbots",
-      description: "Conversational AI solutions with natural language processing for enhanced customer engagement.",
+      description: "Interactive AI chatbots using natural language processing (NLP) and conversational intelligence to deliver personalized customer experiences, improve engagement, reduce response times, and drive higher satisfaction.",
     },
     {
       icon: <AiOutlineCode />,
       title: "Full Stack Development",
-      description: "End-to-end web application development with modern frameworks and scalable architecture.",
+      description: "End-to-end full stack web development services using modern frameworks, scalable architectures, and responsive design principles to build robust, high-performance web applications tailored for businesses of all sizes.",
     },
     {
       icon: <AiOutlineApi />,
       title: "API Development",
-      description: "RESTful and GraphQL APIs designed for performance, security, and seamless integration.",
+      description: "Design and development of secure, high-performance RESTful and GraphQL APIs that ensure seamless system integration, reliable data exchange, and optimized backend performance for complex applications.",
     },
     {
       icon: <FaChartLine />,
       title: "Data Analytical Softwares",
-      description: "Transform raw data into actionable insights with advanced analytics and visualization.",
+      description: "Advanced data analytics software transforming raw business data into actionable insights with sophisticated visualization, reporting tools, and predictive models to enhance strategic planning and operational efficiency.",
     },
     {
       icon: <AiOutlineDatabase />,
       title: "Data Scraping & Automation",
-      description: "Automated data extraction pipelines and workflow automation for efficiency.",
+      description: "Automated data scraping and workflow automation solutions that efficiently extract, process, and manage data from multiple sources, boosting productivity, saving time, and supporting data-driven decision making.",
     },
   ];
 
@@ -69,7 +68,7 @@ function Services() {
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           {services.map((service, index) => (
             <Col md={6} lg={4} className="services-project-card" key={index} style={{ display: "flex" }}>
-              <Tilt style={{ width: "100%" }}>
+              {/* <Tilt style={{ width: "100%" }}> */}
                 <Card className="services-project-card-view" style={{ height: "100%", display: "flex", flexDirection: "column" }}>
                   <Card.Body style={{ display: "flex", flexDirection: "column", flex: 1 }}>
                     <div
@@ -96,7 +95,7 @@ function Services() {
                     </Card.Text>
                   </Card.Body>
                 </Card>
-              </Tilt>
+              {/* </Tilt> */}
             </Col>
           ))}
         </Row>

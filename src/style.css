@@ -792,7 +792,7 @@ button:focus {
 }
 
 .services-project-card-view {
-  box-shadow: 0 4px 5px 3px #005e6d !important;
+  box-shadow: inset 0 0px 5px 3px #005e6d !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 1 !important;
@@ -803,7 +803,7 @@ button:focus {
 .services-project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px #005e6d !important;
+  box-shadow: inset 0 3px 4px 3px #005e6d !important;
 }
 
 .blog-card {
