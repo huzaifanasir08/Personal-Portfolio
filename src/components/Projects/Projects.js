@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import './Projects.css'
 
 function Projects() {
   const [data, setData] = useState([]);
@@ -28,7 +29,7 @@ function Projects() {
 
     <Container fluid className="project-section">
       <Particle />
-      <Container style={{ paddingLeft: "5px", paddingRight: "20px" }}>
+      <Container className="project-section-con">
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>

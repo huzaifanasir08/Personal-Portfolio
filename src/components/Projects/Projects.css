@@ -1,0 +1,14 @@
+.project-section-con{
+    padding: 0 20px 0px 5px !important;
+}
+
+
+@media (max-width: 450px) {
+.project-section-con{
+    padding: 0 3px 0px 5px !important;
+}
+.project-card {
+    padding-left: 16px !important;
+    padding-right: 17px !important;
+}
+}
