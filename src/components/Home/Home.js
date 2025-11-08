@@ -13,7 +13,7 @@ function Home() {
 
   const handleViewResume = () => {
     // Add your resume link here
-    window.open('https://drive.google.com/drive/folders/1NZ7JZOLDAbggeNSa0-HSdsfVIwuPLKUU?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1K4Snx0eN4D9mT1KvejV8WTvYHMv6AUE_/view?usp=sharing', '_blank');
   };
   const handleHireMe = () => {
     // Add your resume link here
