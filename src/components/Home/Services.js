@@ -1,4 +1,4 @@
-import {Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import "./Home.css";
 import {
