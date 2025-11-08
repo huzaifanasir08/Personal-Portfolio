@@ -1,9 +1,7 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import programmer from "../../Assets/programmer.png";
 import profile from "../../Assets/profile.png";
 import Tilt from "react-parallax-tilt";
-import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import Particle from "../Particle";

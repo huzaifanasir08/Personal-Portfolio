@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 // import './Techstack.css'; // Make sure to create and import the corresponding CSS file
 
 const Techstack = () => {

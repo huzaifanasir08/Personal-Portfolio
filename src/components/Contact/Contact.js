@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import '../../style.css';
 import Particle from '../Particle.js';
 import github from '../../Assets/github.png';

@@ -1,8 +1,6 @@
-import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import profile from "../../Assets/profile.png";
 import progarmmer from "../../Assets/programmer.png";
-import profileSmall from "../../Assets/profile-small.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Services from "./Services";

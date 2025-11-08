@@ -1,7 +1,5 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import {Col, Card } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import Particle from "../Particle";
 import "./Home.css";
 import {
   AiOutlineWechat,
