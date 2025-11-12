@@ -18,6 +18,12 @@
     text-align: center;
     font-size: 1.3rem;
 }
+
+
+.typer {
+    padding-left: 15px;
+    text-align: left;
+}
   
 /* Home Section Mobile Responsiveness */
 @media (max-width: 767px) {

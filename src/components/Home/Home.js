@@ -36,7 +36,7 @@ function Home() {
                 I'M
                 <strong className="main-name"> Huzaifa Nasir</strong>
               </h1>
-              <div className='typer' style={{ paddingLeft: 12, textAlign: "left" }}>
+              <div className='typer'>
                 <Type />
                 <p style={{ marginTop: "20px", marginBottom: "30px", fontSize: "1.1rem", opacity: 0.9 }}>
                   Let's work together to bring your ideas to life. I'm here to help you build amazing digital solutions.

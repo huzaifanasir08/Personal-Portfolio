@@ -418,6 +418,7 @@ button:focus {
   padding-top: 50px;
   font-size: 1.2em !important;
   text-align: left;
+  margin-left: 3px;
 }
 
 .home-about-social {
@@ -635,7 +636,7 @@ button:focus {
 .skill-level {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 30px 0px 55px 0px;
+  margin: 30px 0px 55px 4px;
   align-items: center;
   justify-items: center;
   column-gap: 20px;
