@@ -67,7 +67,7 @@ width: 35.666667% !important;
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.02) !important;
   overflow: hidden !important;
   border: 2.2px solid #006381 !important;
 }
