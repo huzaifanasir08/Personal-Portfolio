@@ -36,7 +36,7 @@ width: 35.666667% !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px #001d26 !important;
+  inset 0px 0px 4px 2px #001d26 !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
