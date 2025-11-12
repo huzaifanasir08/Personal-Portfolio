@@ -1130,6 +1130,7 @@ button:focus {
 }
 .tools{
   margin: 25px 0 !important;
+  column-gap: 15px;
 }
 .form-group input:focus,
 .form-group textarea:focus {
