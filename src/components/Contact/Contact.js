@@ -207,7 +207,7 @@ const Contact = () => {
                                 </a>
                             </div>
                         </div>
-                        <div id="linkedin">
+                        {/* <div id="linkedin">
                             <div className="info-item">
                                 <img src={linkedin} alt="LinkedIn" />
                                 <a
@@ -218,7 +218,7 @@ const Contact = () => {
                                     Huzaifa Nasir
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                         <div id="gitHub">
                             <div className="info-item">
                                 <img src={github} alt="GitHub" />

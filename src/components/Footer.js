@@ -40,7 +40,7 @@ function Footer() {
                 <AiOutlineWhatsApp />
               </a>
             </li>
-            <li className="social-icons">
+            {/* <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/muhammad-huzaifanasir"
                 style={{ color: "white" }}
@@ -49,7 +49,7 @@ function Footer() {
               >
                 <FaLinkedinIn />
               </a>
-            </li>
+            </li> */}
             <li className="social-icons">
               <a
                 href="https://www.instagram.com/muhammad_huzaifanasir"
