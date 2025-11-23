@@ -72,7 +72,7 @@ function Projects() {
           }
         </Row>
       </Container>
-      <Container style={{ paddingLeft: "5px", paddingRight: "20px" }}>
+      <Container className="project-section-con">
         <h1 className="project-heading">
         My Recent <strong className="purple">Contributions </strong>
         </h1>

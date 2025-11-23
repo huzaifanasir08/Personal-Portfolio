@@ -4,7 +4,7 @@ import { ImCheckmark } from "react-icons/im";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
-      <Card.Body style={{ paddingLeft: "2px" }}>
+      <Card.Body style={{ paddingLeft: "0px" }}>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify", fontSize: "clamp(15px, 3vw, 22px)" }}> I’m <span className="purple">Huzaifa Nasir</span> from <span className="purple">Sialkot, Pakistan</span>. Previously, I worked as a <span className="purple">Django Backend & AI Developer</span> at <span className="purple">Datafunction Inc.</span>, where I built scalable and efficient solutions that power real-world applications. I completed my <span className="purple">BS in Software Engineering</span> from the <span className="purple">University of Sialkot</span>. I’m a passionate and curious learner who loves exploring emerging technologies and turning complex problems into practical, impactful solutions. I adapt quickly, thrive in collaborative environments, and enjoy working with driven, talented people. <br /><br /> Apart from coding, some other activities that I love to do! </p>
           <ul className="other-activity">

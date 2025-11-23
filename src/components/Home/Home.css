@@ -227,6 +227,7 @@
   .home-about-body {
     font-size: 0.85rem !important;
     padding-top: 15px !important;
+    margin-left: 0px !important;
   }
 
   .button_more {
@@ -277,7 +278,7 @@
     padding: 10px 5px 10px 7px !important
   }
 .serv-cards{
-  padding: 0 9px 0 9px !important;
+  padding: 0 10px 0 10px !important;
 }
 
   .services-project-card-view .card-body {

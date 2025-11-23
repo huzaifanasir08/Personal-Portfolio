@@ -564,7 +564,7 @@ button:focus {
   }
 
   .small-row {
-    padding: 0px 5px !important;
+      padding: 0px 4px 0 5px !important;
   }
 
   .container,
