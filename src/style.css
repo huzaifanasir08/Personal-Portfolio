@@ -608,6 +608,7 @@ button:focus {
 
   .typer {
     padding: 0 5px !important;
+    text-align: left;
   }
 
   .Typewriter__wrapper {
@@ -1199,8 +1200,8 @@ button[type="submit"] {
   .info {
     margin-left: 0px;
     display: grid;
-    justify-content: start;
     padding: 25px 0 0px 0;
+    column-gap: 20px;
   }
 
   .info-item {
@@ -1217,7 +1218,7 @@ button[type="submit"] {
 
 @media (max-width: 450px) {
   #contact-sector {
-    padding: 50px 20px 0px 20px;
+    padding: 50px 16px 0px 17px;
   }
 
   .info {
@@ -1228,6 +1229,9 @@ button[type="submit"] {
   .info img {
     height: 20px;
   }
+  /* .info > div {
+    width: 100%;
+  } */
 
   .info-item p {
     font-size: .7rem;
