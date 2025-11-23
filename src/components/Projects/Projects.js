@@ -62,6 +62,7 @@ function Projects() {
                     isOnDemand={project.isOnDemand}
                     title={project.title}
                     description={project.description}
+                    blogLink={project.blogLink}
                     ghLink={project.gitLink}
                   />
                 </Col>

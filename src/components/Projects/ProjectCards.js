@@ -15,10 +15,14 @@ function ProjectCards(props) {
         {"\n"}
         {"\n"}
 
-
-          <Button variant="primary" href={props.ghLink} target="_blank">
-          Coming Soon
+          <div style={{display:"flex", alignItems:"center", justifyContent:"center", columnGap:"10px"}}>
+          <Button variant="primary" href={props.blogLink} target="_blank">
+          Details
         </Button>
+          <Button variant="primary" href={props.ghLink} target="_blank">
+          Github
+        </Button>
+          </div>
 
       </Card.Body>
     </Card>
