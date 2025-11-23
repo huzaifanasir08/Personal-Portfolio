@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { BsGithub } from "react-icons/bs";
+// import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
@@ -15,13 +15,11 @@ function ProjectCards(props) {
         {"\n"}
         {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-        {props.isOnDemand && (
+
           <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {!props.isOnDemand ? "" : "GitHub"}
+          Coming Soon
         </Button>
-        )}
+
       </Card.Body>
     </Card>
   );
