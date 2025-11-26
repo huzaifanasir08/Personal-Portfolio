@@ -1,6 +1,6 @@
 # 🚀 Portfolio Website  
 
-### 🌐 Live Demo: ([Huzaifa Nasir | Portfolio](https://huzaifanasir-portfolio.vercel.app/))  
+### 🌐 Live Demo: [Huzaifa Nasir | Portfolio](https://huzaifanasir-portfolio.vercel.app) 
 
 # **Personal Portfolio**
 
