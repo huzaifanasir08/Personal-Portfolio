@@ -1,6 +1,6 @@
 # 🚀 Portfolio Website  
 
-### 🌐 Live Demo: ([Huzaifa Nasir | Portfolio](https://huzaifanasir-portfolio.vercel.app/))  
+### 🌐 Live Demo: [Huzaifa Nasir | Portfolio](https://huzaifanasir-portfolio.vercel.app) 
 
 # **Personal Portfolio**
 
@@ -35,7 +35,7 @@ This is a responsive and modern portfolio website showcasing my skills, projects
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/Personal-Portfolio.git
+   git clone https://github.com/huzaifanasir08/Personal-Portfolio.git
    ```  
 2. Navigate to the project directory:
    ```sh
@@ -85,4 +85,4 @@ This project is open-source under the [MIT License](LICENSE), unless specified o
 ### **Contact**
 For any questions or suggestions, feel free to reach out:
 - **Email:** huzaifanasirbutt@gmail.com
-- **LinkedIn:** [Huzaiaf Nasir](https://www.linkedin.com/in/huzaifa-nasir-86911b344)
+- **LinkedIn:** [Huzaifa Nasir](https://www.linkedin.com/in/muhammad-huzaifanasir)
