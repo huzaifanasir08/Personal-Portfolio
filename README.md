@@ -35,7 +35,7 @@ This is a responsive and modern portfolio website showcasing my skills, projects
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/Personal-Portfolio.git
+   git clone https://github.com/huzaifanasir08/Personal-Portfolio.git
    ```  
 2. Navigate to the project directory:
    ```sh
