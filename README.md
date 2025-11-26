@@ -85,4 +85,4 @@ This project is open-source under the [MIT License](LICENSE), unless specified o
 ### **Contact**
 For any questions or suggestions, feel free to reach out:
 - **Email:** huzaifanasirbutt@gmail.com
-- **LinkedIn:** [Huzaiaf Nasir](https://www.linkedin.com/in/huzaifa-nasir-86911b344)
+- **LinkedIn:** [Huzaifa Nasir](https://www.linkedin.com/in/muhammad-huzaifanasir)
