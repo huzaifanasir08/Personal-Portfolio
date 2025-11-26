@@ -106,6 +106,7 @@ function Projects() {
                     isOnDemand={contribution.isOnDemand}
                     title={contribution.title}
                     description={contribution.description}
+                    blogLink={contribution.blogLink}
                     ghLink={contribution.ghLink}
                   />
                 </Col>
