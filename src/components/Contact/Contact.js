@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../../style.css';
 import Particle from '../Particle.js';
 import github from '../../Assets/github.png';
-// import linkedin from '../../Assets/linkedin.png';
+import linkedin from '../../Assets/linkedin.png';
 import email from '../../Assets/email.png';
 import phone from '../../Assets/phone.png';
 import whatsapp from '../../Assets/whatsapp.png';
