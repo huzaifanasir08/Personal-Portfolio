@@ -126,7 +126,7 @@ function Services() {
                   <AiOutlineWhatsApp />
                 </a>
               </li>
-              {/* <li className="social-icons">
+              <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/muhammad-huzaifanasir"
                   target="_blank"
@@ -135,7 +135,7 @@ function Services() {
                 >
                   <FaLinkedinIn />
                 </a>
-              </li> */}
+              </li>
               <li className="social-icons">
                 <a
                   href="https://www.instagram.com/muhammad_huzaifanasir"
