@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Particle from "../Particle";
-import { MdWork, MdLocationOn, MdCalendarToday } from "react-icons/md";
+import { MdWork, MdCalendarToday } from "react-icons/md";
 import { SiDjango } from "react-icons/si";
 import "../../style.css";
 
