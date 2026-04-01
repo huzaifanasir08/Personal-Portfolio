@@ -43,7 +43,7 @@ const Techstack = () => {
       </div>
       <div className="progress-container striped right-fade-z">
         <div className="progress-bar"  data-progress="96">
-          FastAPI 96%
+          Stripe Payments 96%
         </div>
       </div>
       <div className="progress-container striped right-fade-z">

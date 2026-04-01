@@ -1,33 +1,67 @@
+import Container from "react-bootstrap/Container";
+import Particle from "../Particle";
+import "../../style.css";
 
 const experiences = [
-    {
-        company: 'Company A',
-        role: 'Software Engineer',
-        duration: 'Jan 2020 - Present',
-        description: 'Worked on developing and maintaining web applications.'
-    },
-    {
-        company: 'Company B',
-        role: 'Frontend Developer',
-        duration: 'Jun 2018 - Dec 2019',
-        description: 'Focused on creating responsive and user-friendly interfaces.'
-    }
+  {
+    company: "Fablous Technology",
+    role: "Software Engineer",
+    duration: "Nov 2025 – Present",
+    current: true,
+    points: [
+      "Working on full-stack development projects using modern web technologies.",
+      "Collaborating with cross-functional teams to deliver scalable software solutions.",
+      "Contributing to architecture decisions and code reviews.",
+    ],
+  },
+  {
+    company: "Datafunction",
+    role: "Software Engineer",
+    duration: "Jun 2024 – Nov 2025",
+    current: false,
+    points: [
+      "Developed and maintained web applications using React and Django.",
+      "Built and integrated REST APIs for dynamic data handling.",
+      "Improved application performance and implemented responsive UI designs.",
+    ],
+  },
 ];
 
 const Experience = () => {
-    return (
-        <div>
-            <h2>Experience</h2>
-            {experiences.map((experience, index) => (
-                <div key={index} className="experience">
-                    <h3>{experience.company}</h3>
-                    <h4>{experience.role}</h4>
-                    <p>{experience.duration}</p>
-                    <p>{experience.description}</p>
+  return (
+    <Container fluid className="experience-section">
+      <Particle />
+      <Container>
+        <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
+          My <strong className="purple">Experience</strong>
+        </h1>
+        <div className="experience-timeline">
+          {experiences.map((exp, index) => (
+            <div className="experience-card" key={index}>
+              <div className="experience-dot">
+                <span className={exp.current ? "dot dot-active" : "dot"} />
+              </div>
+              <div className="experience-content">
+                <div className="experience-header">
+                  <h3 className="experience-company">{exp.company}</h3>
+                  <span className={`experience-badge ${exp.current ? "badge-current" : "badge-past"}`}>
+                    {exp.current ? "Current" : "Past"}
+                  </span>
                 </div>
-            ))}
+                <h5 className="experience-role">{exp.role}</h5>
+                <p className="experience-duration">{exp.duration}</p>
+                <ul className="experience-points">
+                  {exp.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
-    );
+      </Container>
+    </Container>
+  );
 };
 
 export default Experience;

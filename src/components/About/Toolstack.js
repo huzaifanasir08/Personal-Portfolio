@@ -14,6 +14,8 @@ import {
   SiFastapi,
   SiOpenai,
   SiPandas,
+  SiStripe,
+  SiPostgresql,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -48,6 +50,10 @@ function Toolstack() {
         <div style={{fontSize:'1rem'}}>MySQL</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiPostgresql />
+        <div style={{fontSize:'1rem'}}>PostgreSQL</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <SiGit/>
         <div style={{fontSize:'1rem'}}>Git</div>
       </Col>
@@ -58,6 +64,10 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiGooglecolab/>
         <div style={{fontSize:'1rem'}}>Google Colab</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiStripe/>
+        <div style={{fontSize:'1rem'}}>Stripe</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiReact/>
