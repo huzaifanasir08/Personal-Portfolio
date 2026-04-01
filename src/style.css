@@ -1455,6 +1455,17 @@ button[type="submit"] {
   text-align: left !important;
 }
 
+.exp-company-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.exp-company-link:hover {
+  color: #42e5ff;
+  text-decoration: underline;
+}
+
 .exp-role {
   color: #42e5ff;
   font-size: 0.95rem;

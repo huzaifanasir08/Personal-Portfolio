@@ -8,6 +8,7 @@ import "../../style.css";
 const experiences = [
   {
     company: "Fabulous Technology Solutions",
+    url: "https://fabtechsol.com/",
     role: "Django Backend Developer",
     duration: "Nov 2025 – Present",
     type: "Full-time",
@@ -25,6 +26,7 @@ const experiences = [
   },
   {
     company: "Datafunction Inc.",
+    url: "https://datafunction.ca/",
     role: "Django Backend Developer",
     duration: "Jun 2024 – Nov 2025",
     type: "Remote, Full-time",
@@ -83,7 +85,9 @@ const ExperienceCard = ({ exp, index }) => {
 
         <div className="exp-header">
           <div>
-            <h3 className="exp-company">{exp.company}</h3>
+            <h3 className="exp-company">
+              <a href={exp.url} target="_blank" rel="noopener noreferrer" className="exp-company-link">{exp.company}</a>
+            </h3>
             <h5 className="exp-role">
               <MdWork size={15} style={{ marginRight: 6, color: "#42e5ff" }} />
               {exp.role}
