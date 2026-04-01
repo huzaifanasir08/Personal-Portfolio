@@ -1301,136 +1301,283 @@ button[type="submit"] {
 .experience-section {
   position: relative;
   padding-top: 150px !important;
-  padding-bottom: 60px !important;
+  padding-bottom: 80px !important;
   background-image: var(--section-background-color) !important;
   color: white;
   min-height: 100vh;
 }
 
-.experience-timeline {
-  position: relative;
-  padding-left: 30px;
-  margin-top: 20px;
+.exp-container {
+  max-width: 100% !important;
+  padding: 0 40px !important;
 }
 
-.experience-timeline::before {
-  content: "";
-  position: absolute;
-  left: 8px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, #42e5ff, #006381);
+@media (max-width: 450px) {
+  .exp-container {
+    padding: 0 0px 0 5px !important
+  }
 }
 
-.experience-card {
-  position: relative;
+.exp-heading-wrap {
+  margin-bottom: 50px;
+}
+.exp-point {
+    text-align: justify !important;
+}
+.exp-subheading {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 6px;
+}
+
+.exp-timeline {
+  padding: 0 77px 0 63px;
   display: flex;
-  gap: 24px;
-  margin-bottom: 40px;
+  flex-direction: column;
+  gap: 0;
 }
 
-.experience-dot {
-  position: absolute;
-  left: -30px;
-  top: 6px;
+/* --- Card --- */
+.exp-card {
+  display: flex;
+  gap: 0;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.dot {
-  display: block;
-  width: 18px;
-  height: 18px;
+.exp-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Icon column --- */
+.exp-icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 28px;
+  flex-shrink: 0;
+}
+
+.exp-icon-wrap {
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: #006381;
-  border: 2px solid #42e5ff;
-}
-
-.dot-active {
-  background: #42e5ff;
-  box-shadow: 0 0 10px #42e5ff;
-}
-
-.experience-content {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid #006381;
-  border-radius: 10px;
-  padding: 24px 28px;
-  width: 100%;
-  box-shadow: 0 4px 15px rgba(0, 99, 129, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-content:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(66, 229, 255, 0.15);
-}
-
-.experience-header {
+  background: rgba(0, 99, 129, 0.25);
+  border: 2px solid #006381;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 4px;
-}
-
-.experience-company {
+  justify-content: center;
   color: #42e5ff;
-  font-size: 1.4rem;
-  margin: 0;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
 
-.experience-badge {
-  font-size: 0.75rem;
-  padding: 3px 12px;
+.exp-icon-wrap--active {
+  background: rgba(66, 229, 255, 0.12);
+  border-color: #42e5ff;
+  box-shadow: 0 0 18px rgba(66, 229, 255, 0.3);
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(66, 229, 255, 0.25); }
+  50%       { box-shadow: 0 0 25px rgba(66, 229, 255, 0.55); }
+}
+
+.exp-connector {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  background: linear-gradient(to bottom, #42e5ff44, #00638144);
+  margin: 6px 0;
+}
+
+/* --- Body --- */
+.exp-body {
+  flex: 1;
+  padding-bottom: 48px;
+}
+
+.exp-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.exp-duration {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #888;
+  letter-spacing: 0.3px;
+}
+
+.exp-badge {
+  font-size: 0.72rem;
+  padding: 2px 10px;
   border-radius: 20px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
-.badge-current {
-  background: rgba(66, 229, 255, 0.15);
+.exp-badge--current {
+  background: rgba(66, 229, 255, 0.1);
   border: 1px solid #42e5ff;
   color: #42e5ff;
 }
 
-.badge-past {
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid #555;
-  color: #aaa;
-}
-
-.experience-role {
-  color: #ccc;
-  font-size: 1rem;
-  margin: 4px 0 6px;
-}
-
-.experience-duration {
+.exp-badge--past {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #444;
   color: #888;
-  font-size: 0.85rem;
-  margin-bottom: 14px;
 }
 
-.experience-points {
-  padding-left: 18px;
-  margin: 0;
-  color: #ddd;
+.exp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.exp-company {
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+  letter-spacing: 0.2px;
+  text-align: left !important;
+}
+
+.exp-role {
+  color: #42e5ff;
   font-size: 0.95rem;
-  line-height: 1.8;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: left !important;
 }
 
-.experience-points li {
-  margin-bottom: 4px;
+.exp-type {
+    font-size: 0.75rem;
+    color: #ffffff;
+    border: 1px solid #41e3fd;
+    padding: 2px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+.exp-description {
+  color: #aaa;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  border-left: 3px solid #006381;
+  padding-left: 14px;
+  text-align: left !important;
+}
+
+/* Card container */
+.exp-card--visible .exp-body > .exp-card-inner {
+  border-color: #42e5ff33;
+}
+
+.exp-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeSlideIn 0.4s ease forwards;
+  text-align: left;
+}
+
+.exp-card--visible .exp-point {
+  opacity: 1;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.exp-point-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #42e5ff;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+.exp-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.exp-tech-tag {
+  font-size: 0.75rem;
+  padding: 3px 12px;
+  border-radius: 20px;
+  background: rgba(66, 229, 255, 0.07);
+  border: 1px solid rgba(66, 229, 255, 0.25);
+  color: #42e5ff;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease;
+}
+
+.exp-tech-tag:hover {
+  background: rgba(66, 229, 255, 0.18);
 }
 
 @media (max-width: 767px) {
+  .exp-timeline {
+  padding: 0 5px 0 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.exp-container {
+    max-width: 100% ;
+    padding: 0 40px 0 35px;
+}
+.exp-description {
+    text-align: justify !important;
+}
   .experience-section {
     padding-top: 90px !important;
   }
-
-  .experience-company {
-    font-size: 1.2rem;
+  .exp-icon-col {
+    margin-right: 18px;
+  }
+  .exp-icon-wrap {
+    width: 38px;
+    height: 38px;
+  }
+  .exp-company {
+    font-size: 1.15rem;
   }
 }
 
@@ -1438,12 +1585,26 @@ button[type="submit"] {
   .experience-section {
     padding-top: 60px !important;
   }
-
-  .experience-content {
-    padding: 18px 16px;
+  .exp-icon-col {
+    margin-right: 14px;
   }
-
-  .experience-points {
+  .exp-icon-wrap {
+    width: 34px;
+    height: 34px;
+  }
+  .exp-company {
+    font-size: 1rem;
+  }
+  .exp-description {
     font-size: 0.85rem;
+  }
+  .exp-point {
+    font-size: 0.82rem;
+  }
+  .exp-header {
+    flex-direction: column;
+  }
+  .exp-meta {
+    justify-content: flex-start;
   }
 }
