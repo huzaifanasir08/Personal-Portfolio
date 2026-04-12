@@ -1,3 +1,42 @@
+.project-tag {
+    position: absolute;
+    top: 18px;
+    left: -36px;
+    width: 130px;
+    background: linear-gradient(90deg, #141516, #17d4ff);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    z-index: 10;
+    box-shadow: 0 2px 10px rgb(18 23 25);
+}
+/* .project-tag {
+  position: absolute;
+  top: 18px;
+  left: -36px;
+  width: 130px;
+  background: linear-gradient(90deg, #7b2ff7, #c850c0);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(123, 47, 247, 0.5);
+} */
+
+.project-card:hover .project-tag {
+  box-shadow: 0 2px 20px rgba(7, 139, 159, 0.729);
+}
+
 .project-section-con{
     padding: 0 20px 0px 5px !important;
 }
