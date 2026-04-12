@@ -4,7 +4,9 @@ import Button from "react-bootstrap/Button";
 
 function ProjectCards(props) {
   return (
+    <div style={{ position: "relative" }}>
     <Card className="project-card-view">
+      {props.isOnDemand && <span className="project-tag">Prime</span>}
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
@@ -26,6 +28,7 @@ function ProjectCards(props) {
 
       </Card.Body>
     </Card>
+    </div>
   );
 }
 export default ProjectCards;
